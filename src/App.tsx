@@ -1,11 +1,13 @@
 import Header from "./components/Header";
-import ProductList from "./components/ProductList";
+
+
+// import ProductList from "./components/ProductList";
 
 function App() {
   return (
     <>
       <Header />
-      <ProductList />
+      {/* <ProductList /> */}
     </>
   );
 }

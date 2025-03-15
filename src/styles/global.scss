@@ -1,0 +1,19 @@
+// Reset básico
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Configuração global do layout
+.content {
+  width: 1440px;
+  margin: auto;
+}
+
+.content-1280 {
+  width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}

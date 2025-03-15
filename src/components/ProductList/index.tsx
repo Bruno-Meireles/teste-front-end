@@ -11,7 +11,7 @@ const ProductList = () => {
   }, []);
 
   return (
-    <div>
+    <>
       {products.map((product, index) => {
         return (
           <div key={index}>
@@ -22,7 +22,7 @@ const ProductList = () => {
           </div>
         );
       })}
-    </div>
+    </>
   );
 };
 

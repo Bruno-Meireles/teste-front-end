@@ -1,0 +1,53 @@
+@use "../../styles/variables" as *;
+
+.header {
+  width: 100%;
+  background-color: $primary-color;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding:0 1rem;
+    width: 100%;
+    max-width: 630px;
+    background-color: $gray-color; 
+
+    input {
+      border: none;
+      outline: none;
+      padding: 0.5rem;
+      flex: 1;
+      min-width: 200px;
+      background-color: transparent; 
+      width: 100%;
+    }
+
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 2rem;
+
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
