@@ -1,23 +1,32 @@
+import Button from "../ui/Button/Button";
 import "./Footer.scss"
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__top">
-        <h2>Inscreva-se na nossa newsletter</h2>
-        <p>
-          Assine a nossa newsletter e receba as novidades e conteúdos exclusivos
-          da Econverse.
-        </p>
-
-        <div className="footer__form">
-          <input type="text" placeholder="Digite seu nome" />
-          <input type="email" placeholder="Digite seu e-mail" />
-          <button>INSCREVER</button>
+        <div className="content-1141">
+          <div className="footer__newsletter">
+            <div className="footer__newsletter-text">
+              <h2>Inscreva-se na nossa newsletter</h2>
+              <p>
+                Assine a nossa newsletter e receba as novidades e conteúdos
+                exclusivos da Econverse.
+              </p>
+            </div>
+            <div className="footer__form">
+              <input
+                className="footer__input"
+                type="text"
+                placeholder="Digite seu nome"
+              />
+              <input type="email" placeholder="Digite seu e-mail" />
+              <Button text="INSCREVER" onClick={() => {}}></Button>
+            </div>
+          </div>
+          <label className="footer__checkbox">
+            <input type="checkbox" /> Aceito os termos e condições
+          </label>
         </div>
-
-        <label>
-          <input type="checkbox" /> Aceito os termos e condições
-        </label>
       </div>
 
       <div className="footer__content">
