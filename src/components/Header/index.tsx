@@ -1,3 +1,4 @@
+import { useState } from "react";
 import box from "../../assets/icons/box.svg";
 import cart from "../../assets/icons/cart.svg";
 import heart from "../../assets/icons/heart.svg";
@@ -13,10 +14,9 @@ const topbarItems: TopbarItem[] = [
   { icon: heart, text: "Parcele suas compras" },
 ];
 
-
 const Header = () => {
-    
-  
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="header">
       <div className="header__topbar">
@@ -31,7 +31,7 @@ const Header = () => {
           </ul>
         </div>
       </div>
-      ;
+
       <div className="header__container">
         <div className="content-1280 space-between">
           <div className="header__logo">
@@ -65,9 +65,20 @@ const Header = () => {
           </div>
         </div>
         <nav className="header__nav">
-          <div className="content-1141">
-            <ul className="header__menu">
-              <li className="header__menu-item"> TODAS CATEGORIAS</li>
+          <button
+            className="menu-toggle"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {menuOpen ? "✖" : "☰"}
+          </button>
+
+          <div className="content-categories">
+            <ul className={`header__menu ${menuOpen ? "open" : ""}`}>
+             <button className="menu-close" onClick={() => setMenuOpen(false)}>
+                ✖
+              </button>
+
+              <li className="header__menu-item">TODAS CATEGORIAS</li>
               <li className="header__menu-item">SUPERMERCADO</li>
               <li className="header__menu-item">LIVROS</li>
               <li className="header__menu-item">MODA</li>

@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+   font-family: "Poppins", sans-serif; 
 }
 
 
@@ -25,8 +26,6 @@
     align-items: center;
     width: 100%;
  }
-
-
 .content-1280.space-between {
     width: 1280px;
   margin: auto;
@@ -38,4 +37,11 @@
 .content-1141 {
 width: 1141px;
   margin: auto;   
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
 }
