@@ -11,11 +11,32 @@
 .content {
   width: 1440px;
   margin: auto;
+
 }
 
+
+
 .content-1280 {
-  width: 1280px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+ }
+
+
+.content-1280.space-between {
+    width: 1280px;
   margin: auto;
   display: flex;
   justify-content: space-between;
+}
+
+
+.content-1141 {
+ 
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+    
 }
