@@ -1,0 +1,35 @@
+@use "../../styles/variables" as *;
+
+.brands-grid {
+  text-align: center;
+  padding: 60px 0;
+
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+    color: $text-purple;
+    margin-bottom: 20px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+     gap: 20px;
+     max-width: 1250px;
+  }
+
+  &__item {
+    width: 211px;
+    height: 211px;
+    background: $primary-color;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px  rgba(0, 0, 0, 0.13);
+   
+  }
+
+ 
+}
