@@ -1,3 +1,5 @@
+@use "../../styles/variables" as *;
+
 .banner {
   position: relative;
   width: 100%;
@@ -9,11 +11,34 @@
     object-fit: cover;
   }
 
+  h1 {
+  font-size: 3rem;
+  
+}
+
+
   &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
     position: absolute;
     top: 50%;
     left: 10%;
     transform: translateY(-50%);
-    color: white;
+    color: $primary-color;
+    max-width: 500px;
+  
   }
+  .banner__discount {
+    display: flex;
+    font-size: 2rem;
+    gap: 1rem;
+    align-items: center;
+  }
+  .banner__discount-text {
+    font-size: 2rem;
+    color: $yellow;
+  }
+
 }

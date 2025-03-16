@@ -8,7 +8,11 @@ const Banner = () => {
       <img src={bannerImage} alt="Banner Principal" />
       <div className="banner__text">
         <h1>Venha conhecer nossas promoções</h1>
-        <p>50% Off nos produtos </p>
+        <div className="banner__discount">
+          <p className="banner__discount-text">50% Off</p>
+          <span className="banner__discount-span">nos produtos</span>
+        </div>
+
         <Button text="Ver produto" onClick={() => {}}></Button>
       </div>
     </section>
