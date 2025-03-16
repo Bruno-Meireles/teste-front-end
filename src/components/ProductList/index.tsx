@@ -49,7 +49,18 @@ const ProductList = () => {
 
   return (
     <div className="product-list">
-      <h2 className="product-list__title">Produtos Relacionados</h2>
+            <div className="related-products">
+        <h2 className="product-list__title">Produtos relacionados</h2>
+        <div className="categories">
+          <div className="category active">CELULAR</div>
+          <div className="category">ACESSÓRIOS</div>
+          <div className="category">TABLETS</div>
+          <div className="category">NOTEBOOKS</div>
+          <div className="category">TVS</div>
+          <div className="category">VER TODOS</div>
+        </div>
+      </div>
+
       <div className="product-list__container">
         <button className="arrow-button left" onClick={prevSlide}>
           <img src={arrorLeft} alt="Anterior" />

@@ -1,4 +1,4 @@
-@use "../../styles/variables" as*; 
+@use "../../styles/variables" as *;
 
 .product-card {
   border-radius: 12px;
@@ -9,20 +9,39 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: start;
+  height: 100%;
+  justify-content: space-between;
+  padding: 16px;
 
   &:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   }
-
-  img {
-    max-width: 150px;
-    max-height: 150px;
-    object-fit: contain;
-    margin-bottom: 10px;
+.product-card__button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: auto;
+  
+  .custom-button {
+    width: 100%; 
+    max-width: 278px;
+    min-width: 150px; 
   }
+}
+
+
+
+img {
+  max-width: 278px;
+  max-height: 228px;
+  object-fit: contain;
+  width: 100%;
+  margin: 0 auto; 
+  display: block; 
+}
+
 
   h3 {
     font-size: 16px;
@@ -33,7 +52,7 @@
 
   p {
     font-size: 14px;
-    color: t$text-color;
+    color: $text-color;
     margin-bottom: 10px;
   }
 
@@ -52,7 +71,7 @@
 
   .product-card__installments {
     font-size: 12px;
-    color:$description;
+    color: $description;
   }
 
   .product-card__free-shipping {
@@ -61,5 +80,13 @@
     font-weight: bold;
     margin-bottom: 10px;
   }
+}
 
+.product-carousel {
+  display: flex;
+  overflow: hidden;
+
+  .product-card {
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
+  }
 }

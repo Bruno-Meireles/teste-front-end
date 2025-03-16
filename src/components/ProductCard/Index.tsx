@@ -20,7 +20,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
           ou {product.installments}x de R$ {product.installmentValue} sem juros
         </p>
         <p className="product-card__free-shipping">Frete grátis</p>
+        <div className="product-card__button-container">
           <Button text="Comprar" onClick={() => {}}></Button>
+        </div>
       </div>
     </div>
   );
