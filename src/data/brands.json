@@ -1,0 +1,13 @@
+{
+  "brands": [
+    { "image": "/assets/img/technology.png", "name": "technology" },
+    { "image": "/assets/img/supermarket.png", "name": "supermarket" },
+    { "image": "/assets/img/drinks.png", "name": "drinks" },
+    { "image": "/assets/img/tools.png", "name": "tools" },
+    { "image": "/assets/img/health.png", "name": "health" },  
+    { "image": "/assets/img/running.png", "name": "race" },
+    { "image": "/assets/img/fashion.png", "name": "fashion" }
+
+    
+  ]
+}
