@@ -1,4 +1,4 @@
-
+import { ToastContainer } from "react-toastify";
 
 import Banner from "./components/Banner";
 import BrandGrid from "./components/BrandGrid/BrandGrid";
@@ -6,11 +6,12 @@ import BrandsCarousel from "./components/BrandsCarousel";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Partners from "./components/PartnerCard/PartnerCard";
- import ProductList from "./components/ProductList";
+import ProductList from "./components/ProductList";
 
 function App() {
   return (
     <>
+      <ToastContainer />
       <Header />
       <Banner />
       <BrandsCarousel />

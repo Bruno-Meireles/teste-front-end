@@ -1,4 +1,5 @@
 import { ProductType } from "../../types/Product";
+import Button from "../ui/Button/Button";
 import "./ProductCard.scss";
 
 interface ProductCardProps {
@@ -19,7 +20,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
           ou {product.installments}x de R$ {product.installmentValue} sem juros
         </p>
         <p className="product-card__free-shipping">Frete grátis</p>
-        <button className="product-card__buy-button">Comprar</button>
+          <Button text="Comprar" onClick={() => {}}></Button>
       </div>
     </div>
   );

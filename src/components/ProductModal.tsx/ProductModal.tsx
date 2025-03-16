@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"; 
 import { useState } from "react";
 import { ProductType } from "../../types/Product";
 import "./ProductModal.scss";
@@ -9,11 +11,23 @@ interface ProductModalProps {
 }
 
 const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) => {
-  
   const [quantity, setQuantity] = useState(1);
 
   const increment = () => setQuantity((prev) => prev + 1);
   const decrement = () => setQuantity((prev) => (prev > 1 ? prev - 1 : 1));
+
+  const handleBuy = () => {
+    toast.success("✅ Produto adicionado ao carrinho!", {
+      position: "top-right",
+      autoClose: 3000, 
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      theme: "light",
+    });
+     onClose(); 
+  };
 
   return (
     <>
@@ -41,7 +55,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) => {
                 <span>{quantity}</span>
                 <button onClick={increment}>+</button>
               </div>
-              <Button text="COMPRAR" onClick={() => {}}></Button>
+              <Button text="COMPRAR" onClick={handleBuy} />
             </div>
           </div>
         </div>
