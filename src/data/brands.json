@@ -1,12 +1,12 @@
 {
   "brands": [
-    { "image": "/assets/img/technology.png", "name": "technology" },
-    { "image": "/assets/img/supermarket.png", "name": "supermarket" },
-    { "image": "/assets/img/drinks.png", "name": "drinks" },
-    { "image": "/assets/img/tools.png", "name": "tools" },
-    { "image": "/assets/img/health.png", "name": "health" },  
-    { "image": "/assets/img/running.png", "name": "race" },
-    { "image": "/assets/img/fashion.png", "name": "fashion" }
+    { "image": "/assets/img/technology.svg", "name": "Tecnologia" },
+    { "image": "/assets/img/supermarket.svg", "name": "Supermercado" },
+    { "image": "/assets/img/drinks.svg", "name": "Bebidas" },
+    { "image": "/assets/img/tools.svg", "name": "Ferramentas" },
+    { "image": "/assets/img/health.svg", "name": "Saúde" },  
+    { "image": "/assets/img/running.svg", "name": "Esportes e Fitness" },
+    { "image": "/assets/img/fashion.svg", "name": "Moda" }
 
     
   ]

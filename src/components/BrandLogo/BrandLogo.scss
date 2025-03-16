@@ -1,17 +1,49 @@
-.brand-logo {
+@import "../../styles/variables";
+
+.brand-logo-container {
   display: flex;
-  background-color: #666;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  
-  img {
-    height: 50px;
-    margin-bottom: 5px;
-  }
+}
 
-  p {
-    font-size: 14px;
-    color: #666;
+.brand-logo {
+  background: $gray-color;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 128px;
+  height: 128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: $primary-color;
+
+    .brand-logo__image {
+      fill: $text-purple;
+    }
+
+    + .brand-logo__text {
+      color: $text-purple;
+    }
   }
+}
+
+.brand-logo__image {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.brand-logo__text {
+  font-size: 14px;
+  color: $text-logo;
+  text-align: center;
+  margin-top: 8px;
+  transition: color 0.3s ease;
 }
