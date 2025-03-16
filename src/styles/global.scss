@@ -1,11 +1,13 @@
-// Reset básico
+@use "../styles/variables" as *;
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-// Configuração global do layout
+
 .content {
   width: 1440px;
   margin: auto;
